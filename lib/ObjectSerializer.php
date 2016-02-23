@@ -38,7 +38,6 @@ namespace Systran\Client;
  *
  * @category Class
  * @package  Systran\Client
- * @author   http://github.com/Systran-api/Systran-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link
  */
