@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Systran\Client
+ * @package  Systran\Client\Model
  *
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  *
@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -39,7 +39,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description POI with only basic information
- * @package     Systran\Client
+ * @package     Systran\Client\Model
  * @author      http://github.com/Systran-api/Systran-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/Systran-api/Systran-codegen
@@ -52,7 +52,7 @@ class LitePOI implements ArrayAccess
       */
     static $SystranTypes = array(
         'id' => 'string',
-        'location' => 'Systran\Client\LiteLocation',
+        'location' => 'Systran\Client\Model\LiteLocation',
         'name' => 'string',
         'main_type' => 'string',
         'types' => 'string[]',
@@ -111,7 +111,7 @@ class LitePOI implements ArrayAccess
     
     /**
       * $location Location
-      * @var Systran\Client\LiteLocation
+      * @var Systran\Client\Model\LiteLocation
       */
     protected $location;
     
@@ -186,7 +186,7 @@ class LitePOI implements ArrayAccess
     
     /**
      * Gets location
-     * @return Systran\Client\LiteLocation
+     * @return Systran\Client\Model\LiteLocation
      */
     public function getLocation()
     {
@@ -195,7 +195,7 @@ class LitePOI implements ArrayAccess
   
     /**
      * Sets location
-     * @param Systran\Client\LiteLocation $location Location
+     * @param Systran\Client\Model\LiteLocation $location Location
      * @return $this
      */
     public function setLocation($location)

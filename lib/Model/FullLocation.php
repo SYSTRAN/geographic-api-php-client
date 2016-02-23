@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -51,9 +51,9 @@ class FullLocation implements ArrayAccess
       * @var string[]
       */
     static $SystranTypes = array(
-        'boundaries' => 'Systran\Client\Boundaries',
-        'position' => 'Systran\Client\FullPosition',
-        'address' => 'Systran\Client\Address'
+        'boundaries' => 'Systran\Client\Model\Boundaries',
+        'position' => 'Systran\Client\Model\FullPosition',
+        'address' => 'Systran\Client\Model\Address'
     );
   
     /** 
@@ -89,19 +89,19 @@ class FullLocation implements ArrayAccess
     
     /**
       * $boundaries Boundaries defined by a polygon composed of a list of coordinates
-      * @var Systran\Client\Boundaries
+      * @var Systran\Client\Model\Boundaries
       */
     protected $boundaries;
     
     /**
       * $position Position defined by coordinates and type
-      * @var Systran\Client\FullPosition
+      * @var Systran\Client\Model\FullPosition
       */
     protected $position;
     
     /**
       * $address Address
-      * @var Systran\Client\Address
+      * @var Systran\Client\Model\Address
       */
     protected $address;
     
@@ -121,7 +121,7 @@ class FullLocation implements ArrayAccess
     
     /**
      * Gets boundaries
-     * @return Systran\Client\Boundaries
+     * @return Systran\Client\Model\Boundaries
      */
     public function getBoundaries()
     {
@@ -130,7 +130,7 @@ class FullLocation implements ArrayAccess
   
     /**
      * Sets boundaries
-     * @param Systran\Client\Boundaries $boundaries Boundaries defined by a polygon composed of a list of coordinates
+     * @param Systran\Client\Model\Boundaries $boundaries Boundaries defined by a polygon composed of a list of coordinates
      * @return $this
      */
     public function setBoundaries($boundaries)
@@ -142,7 +142,7 @@ class FullLocation implements ArrayAccess
     
     /**
      * Gets position
-     * @return Systran\Client\FullPosition
+     * @return Systran\Client\Model\FullPosition
      */
     public function getPosition()
     {
@@ -151,7 +151,7 @@ class FullLocation implements ArrayAccess
   
     /**
      * Sets position
-     * @param Systran\Client\FullPosition $position Position defined by coordinates and type
+     * @param Systran\Client\Model\FullPosition $position Position defined by coordinates and type
      * @return $this
      */
     public function setPosition($position)
@@ -163,7 +163,7 @@ class FullLocation implements ArrayAccess
     
     /**
      * Gets address
-     * @return Systran\Client\Address
+     * @return Systran\Client\Model\Address
      */
     public function getAddress()
     {
@@ -172,7 +172,7 @@ class FullLocation implements ArrayAccess
   
     /**
      * Sets address
-     * @param Systran\Client\Address $address Address
+     * @param Systran\Client\Model\Address $address Address
      * @return $this
      */
     public function setAddress($address)

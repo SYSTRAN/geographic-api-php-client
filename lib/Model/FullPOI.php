@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -52,19 +52,19 @@ class FullPOI implements ArrayAccess
       */
     static $SystranTypes = array(
         'id' => 'string',
-        'location' => 'Systran\Client\FullPOILocation',
+        'location' => 'Systran\Client\Model\FullPOILocation',
         'name' => 'string',
         'types' => 'string[]',
         'rating' => 'int',
         'price_level' => 'int',
-        'contact' => 'Systran\Client\Contact',
+        'contact' => 'Systran\Client\Model\Contact',
         'open_now' => 'bool',
-        'opening_hours' => 'Systran\Client\OpeningHours[]',
-        'photos' => 'Systran\Client\Photo[]',
+        'opening_hours' => 'Systran\Client\Model\OpeningHours[]',
+        'photos' => 'Systran\Client\Model\Photo[]',
         'url' => 'string',
-        'descriptions' => 'Systran\Client\Description[]',
-        'reviews' => 'Systran\Client\Review[]',
-        'booking' => 'Systran\Client\Booking'
+        'descriptions' => 'Systran\Client\Model\Description[]',
+        'reviews' => 'Systran\Client\Model\Review[]',
+        'booking' => 'Systran\Client\Model\Booking'
     );
   
     /** 
@@ -139,7 +139,7 @@ class FullPOI implements ArrayAccess
     
     /**
       * $location Location
-      * @var Systran\Client\FullPOILocation
+      * @var Systran\Client\Model\FullPOILocation
       */
     protected $location;
     
@@ -169,7 +169,7 @@ class FullPOI implements ArrayAccess
     
     /**
       * $contact Contact
-      * @var Systran\Client\Contact
+      * @var Systran\Client\Model\Contact
       */
     protected $contact;
     
@@ -181,13 +181,13 @@ class FullPOI implements ArrayAccess
     
     /**
       * $opening_hours Opening Hours
-      * @var Systran\Client\OpeningHours[]
+      * @var Systran\Client\Model\OpeningHours[]
       */
     protected $opening_hours;
     
     /**
       * $photos Array of Photos
-      * @var Systran\Client\Photo[]
+      * @var Systran\Client\Model\Photo[]
       */
     protected $photos;
     
@@ -199,19 +199,19 @@ class FullPOI implements ArrayAccess
     
     /**
       * $descriptions Description content splitted in several parts
-      * @var Systran\Client\Description[]
+      * @var Systran\Client\Model\Description[]
       */
     protected $descriptions;
     
     /**
       * $reviews Reviews
-      * @var Systran\Client\Review[]
+      * @var Systran\Client\Model\Review[]
       */
     protected $reviews;
     
     /**
       * $booking Booking
-      * @var Systran\Client\Booking
+      * @var Systran\Client\Model\Booking
       */
     protected $booking;
     

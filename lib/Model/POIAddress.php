@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Systran\Client
+ * @package  Systran\Client\Model
  *
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  *
@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -39,7 +39,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description Address
- * @package     Systran\Client
+ * @package     Systran\Client\Model
  * @author      http://github.com/Systran-api/Systran-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/Systran-api/Systran-codegen
@@ -51,7 +51,7 @@ class POIAddress implements ArrayAccess
       * @var string[]
       */
     static $SystranTypes = array(
-        'components' => 'Systran\Client\POIAddressComponents',
+        'components' => 'Systran\Client\Model\POIAddressComponents',
         'formatted' => 'string',
         'vicinity' => 'string'
     );
@@ -89,7 +89,7 @@ class POIAddress implements ArrayAccess
     
     /**
       * $components Address components
-      * @var Systran\Client\POIAddressComponents
+      * @var Systran\Client\Model\POIAddressComponents
       */
     protected $components;
     
@@ -121,7 +121,7 @@ class POIAddress implements ArrayAccess
     
     /**
      * Gets components
-     * @return Systran\Client\POIAddressComponents
+     * @return Systran\Client\Model\POIAddressComponents
      */
     public function getComponents()
     {
@@ -130,7 +130,7 @@ class POIAddress implements ArrayAccess
   
     /**
      * Sets components
-     * @param Systran\Client\POIAddressComponents $components Address components
+     * @param Systran\Client\Model\POIAddressComponents $components Address components
      * @return $this
      */
     public function setComponents($components)

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Systran\Client
+ * @package  Systran\Client\Model
  *
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  *
@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -39,7 +39,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description 
- * @package     Systran\Client
+ * @package     Systran\Client\Model
  * @author      http://github.com/Systran-api/Systran-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/Systran-api/Systran-codegen
@@ -51,7 +51,7 @@ class PoiTypesResponse implements ArrayAccess
       * @var string[]
       */
     static $SystranTypes = array(
-        'error' => 'Systran\Client\ErrorResponse',
+        'error' => 'Systran\Client\Model\ErrorResponse',
         'poi_types' => 'string[]'
     );
   
@@ -85,7 +85,7 @@ class PoiTypesResponse implements ArrayAccess
     
     /**
       * $error Error at request level
-      * @var Systran\Client\ErrorResponse
+      * @var Systran\Client\Model\ErrorResponse
       */
     protected $error;
     
@@ -110,7 +110,7 @@ class PoiTypesResponse implements ArrayAccess
     
     /**
      * Gets error
-     * @return Systran\Client\ErrorResponse
+     * @return Systran\Client\Model\ErrorResponse
      */
     public function getError()
     {
@@ -119,7 +119,7 @@ class PoiTypesResponse implements ArrayAccess
   
     /**
      * Sets error
-     * @param Systran\Client\ErrorResponse $error Error at request level
+     * @param Systran\Client\Model\ErrorResponse $error Error at request level
      * @return $this
      */
     public function setError($error)

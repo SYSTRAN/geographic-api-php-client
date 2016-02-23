@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Systran\Client
+ * @package  Systran\Client\Model
  *
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  *
@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -39,7 +39,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description Contact
- * @package     Systran\Client
+ * @package     Systran\Client\Model
  * @author      http://github.com/Systran-api/Systran-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/Systran-api/Systran-codegen
@@ -51,8 +51,8 @@ class Contact implements ArrayAccess
       * @var string[]
       */
     static $SystranTypes = array(
-        'phone_numbers' => 'Systran\Client\PhoneNumber[]',
-        'mails' => 'Systran\Client\Mail[]'
+        'phone_numbers' => 'Systran\Client\Model\PhoneNumber[]',
+        'mails' => 'Systran\Client\Model\Mail[]'
     );
   
     /** 
@@ -85,13 +85,13 @@ class Contact implements ArrayAccess
     
     /**
       * $phone_numbers Array of phone numbers
-      * @var Systran\Client\PhoneNumber[]
+      * @var Systran\Client\Model\PhoneNumber[]
       */
     protected $phone_numbers;
     
     /**
       * $mails Array of mails
-      * @var Systran\Client\Mail[]
+      * @var Systran\Client\Model\Mail[]
       */
     protected $mails;
     
@@ -110,7 +110,7 @@ class Contact implements ArrayAccess
     
     /**
      * Gets phone_numbers
-     * @return Systran\Client\PhoneNumber[]
+     * @return Systran\Client\Model\PhoneNumber[]
      */
     public function getPhoneNumbers()
     {
@@ -119,7 +119,7 @@ class Contact implements ArrayAccess
   
     /**
      * Sets phone_numbers
-     * @param Systran\Client\PhoneNumber[] $phone_numbers Array of phone numbers
+     * @param Systran\Client\Model\PhoneNumber[] $phone_numbers Array of phone numbers
      * @return $this
      */
     public function setPhoneNumbers($phone_numbers)
@@ -131,7 +131,7 @@ class Contact implements ArrayAccess
     
     /**
      * Gets mails
-     * @return Systran\Client\Mail[]
+     * @return Systran\Client\Model\Mail[]
      */
     public function getMails()
     {
@@ -140,7 +140,7 @@ class Contact implements ArrayAccess
   
     /**
      * Sets mails
-     * @param Systran\Client\Mail[] $mails Array of mails
+     * @param Systran\Client\Model\Mail[] $mails Array of mails
      * @return $this
      */
     public function setMails($mails)

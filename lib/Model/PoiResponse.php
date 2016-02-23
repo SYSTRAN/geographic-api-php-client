@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Systran\Client
+ * @package  Systran\Client\Model
  *
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  *
@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -39,7 +39,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description 
- * @package     Systran\Client
+ * @package     Systran\Client\Model
  * @author      http://github.com/Systran-api/Systran-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/Systran-api/Systran-codegen
@@ -51,10 +51,10 @@ class PoiResponse implements ArrayAccess
       * @var string[]
       */
     static $SystranTypes = array(
-        'error' => 'Systran\Client\ErrorResponse',
+        'error' => 'Systran\Client\Model\ErrorResponse',
         'total' => 'int',
         'offset' => 'int',
-        'points_of_interest' => 'Systran\Client\LitePOI[]'
+        'points_of_interest' => 'Systran\Client\Model\LitePOI[]'
     );
   
     /** 
@@ -93,7 +93,7 @@ class PoiResponse implements ArrayAccess
     
     /**
       * $error Error at request level
-      * @var Systran\Client\ErrorResponse
+      * @var Systran\Client\Model\ErrorResponse
       */
     protected $error;
     
@@ -111,7 +111,7 @@ class PoiResponse implements ArrayAccess
     
     /**
       * $points_of_interest Array of lite POI
-      * @var Systran\Client\LitePOI[]
+      * @var Systran\Client\Model\LitePOI[]
       */
     protected $points_of_interest;
     
@@ -132,7 +132,7 @@ class PoiResponse implements ArrayAccess
     
     /**
      * Gets error
-     * @return Systran\Client\ErrorResponse
+     * @return Systran\Client\Model\ErrorResponse
      */
     public function getError()
     {
@@ -141,7 +141,7 @@ class PoiResponse implements ArrayAccess
   
     /**
      * Sets error
-     * @param Systran\Client\ErrorResponse $error Error at request level
+     * @param Systran\Client\Model\ErrorResponse $error Error at request level
      * @return $this
      */
     public function setError($error)
@@ -195,7 +195,7 @@ class PoiResponse implements ArrayAccess
     
     /**
      * Gets points_of_interest
-     * @return Systran\Client\LitePOI[]
+     * @return Systran\Client\Model\LitePOI[]
      */
     public function getPointsOfInterest()
     {
@@ -204,7 +204,7 @@ class PoiResponse implements ArrayAccess
   
     /**
      * Sets points_of_interest
-     * @param Systran\Client\LitePOI[] $points_of_interest Array of lite POI
+     * @param Systran\Client\Model\LitePOI[] $points_of_interest Array of lite POI
      * @return $this
      */
     public function setPointsOfInterest($points_of_interest)

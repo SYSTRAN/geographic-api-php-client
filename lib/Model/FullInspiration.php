@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -52,13 +52,13 @@ class FullInspiration implements ArrayAccess
       */
     static $SystranTypes = array(
         'id' => 'string',
-        'location' => 'Systran\Client\FullLocation',
+        'location' => 'Systran\Client\Model\FullLocation',
         'type' => 'string',
         'title' => 'string',
         'introduction' => 'string',
         'content' => 'string',
-        'photos' => 'Systran\Client\Photo[]',
-        'videos' => 'Systran\Client\Video[]'
+        'photos' => 'Systran\Client\Model\Photo[]',
+        'videos' => 'Systran\Client\Model\Video[]'
     );
   
     /** 
@@ -115,7 +115,7 @@ class FullInspiration implements ArrayAccess
     
     /**
       * $location Location
-      * @var Systran\Client\FullLocation
+      * @var Systran\Client\Model\FullLocation
       */
     protected $location;
     
@@ -145,13 +145,13 @@ class FullInspiration implements ArrayAccess
     
     /**
       * $photos Array of Photos
-      * @var Systran\Client\Photo[]
+      * @var Systran\Client\Model\Photo[]
       */
     protected $photos;
     
     /**
       * $videos Array of Videos
-      * @var Systran\Client\Video[]
+      * @var Systran\Client\Model\Video[]
       */
     protected $videos;
     
@@ -197,7 +197,7 @@ class FullInspiration implements ArrayAccess
     
     /**
      * Gets location
-     * @return Systran\Client\FullLocation
+     * @return Systran\Client\Model\FullLocation
      */
     public function getLocation()
     {
@@ -206,7 +206,7 @@ class FullInspiration implements ArrayAccess
   
     /**
      * Sets location
-     * @param Systran\Client\FullLocation $location Location
+     * @param Systran\Client\Model\FullLocation $location Location
      * @return $this
      */
     public function setLocation($location)
@@ -323,7 +323,7 @@ class FullInspiration implements ArrayAccess
     
     /**
      * Gets videos
-     * @return Systran\Client\Video[]
+     * @return Systran\Client\Model\Video[]
      */
     public function getVideos()
     {
@@ -332,7 +332,7 @@ class FullInspiration implements ArrayAccess
   
     /**
      * Sets videos
-     * @param Systran\Client\Video[] $videos Array of Videos
+     * @param Systran\Client\Model\Video[] $videos Array of Videos
      * @return $this
      */
     public function setVideos($videos)

@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -54,8 +54,8 @@ class Destination implements ArrayAccess
         'id' => 'string',
         'title' => 'string',
         'content' => 'string',
-        'photos' => 'Systran\Client\Photo[]',
-        'videos' => 'Systran\Client\Video[]'
+        'photos' => 'Systran\Client\Model\Photo[]',
+        'videos' => 'Systran\Client\Model\Video[]'
     );
   
     /** 
@@ -115,13 +115,13 @@ class Destination implements ArrayAccess
     
     /**
       * $photos Array of Photos
-      * @var Systran\Client\Photo[]
+      * @var Systran\Client\Model\Photo[]
       */
     protected $photos;
     
     /**
       * $videos Array of Videos
-      * @var Systran\Client\Video[]
+      * @var Systran\Client\Model\Video[]
       */
     protected $videos;
     
@@ -206,7 +206,7 @@ class Destination implements ArrayAccess
     
     /**
      * Gets photos
-     * @return Systran\Client\Photo[]
+     * @return Systran\Client\Model\Photo[]
      */
     public function getPhotos()
     {
@@ -215,7 +215,7 @@ class Destination implements ArrayAccess
   
     /**
      * Sets photos
-     * @param Systran\Client\Photo[] $photos Array of Photos
+     * @param Systran\Client\Model\Photo[] $photos Array of Photos
      * @return $this
      */
     public function setPhotos($photos)
@@ -227,7 +227,7 @@ class Destination implements ArrayAccess
     
     /**
      * Gets videos
-     * @return Systran\Client\Video[]
+     * @return Systran\Client\Model\Video[]
      */
     public function getVideos()
     {
@@ -236,7 +236,7 @@ class Destination implements ArrayAccess
   
     /**
      * Sets videos
-     * @param Systran\Client\Video[] $videos Array of Videos
+     * @param Systran\Client\Model\Video[] $videos Array of Videos
      * @return $this
      */
     public function setVideos($videos)

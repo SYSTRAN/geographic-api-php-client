@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -52,14 +52,14 @@ class FullDestination implements ArrayAccess
       */
     static $SystranTypes = array(
         'id' => 'string',
-        'location' => 'Systran\Client\FullLocation',
+        'location' => 'Systran\Client\Model\FullLocation',
         'title' => 'string',
         'headline' => 'string',
         'introduction' => 'string',
         'advice' => 'string',
-        'chapters' => 'Systran\Client\Chapter[]',
-        'photos' => 'Systran\Client\Photo[]',
-        'videos' => 'Systran\Client\Video[]'
+        'chapters' => 'Systran\Client\Model\Chapter[]',
+        'photos' => 'Systran\Client\Model\Photo[]',
+        'videos' => 'Systran\Client\Model\Video[]'
     );
   
     /** 
@@ -119,7 +119,7 @@ class FullDestination implements ArrayAccess
     
     /**
       * $location Location
-      * @var Systran\Client\FullLocation
+      * @var Systran\Client\Model\FullLocation
       */
     protected $location;
     
@@ -149,19 +149,19 @@ class FullDestination implements ArrayAccess
     
     /**
       * $chapters Chapters
-      * @var Systran\Client\Chapter[]
+      * @var Systran\Client\Model\Chapter[]
       */
     protected $chapters;
     
     /**
       * $photos Array of Photos
-      * @var Systran\Client\Photo[]
+      * @var Systran\Client\Model\Photo[]
       */
     protected $photos;
     
     /**
       * $videos Array of Videos
-      * @var Systran\Client\Video[]
+      * @var Systran\Client\Model\Video[]
       */
     protected $videos;
     
@@ -208,7 +208,7 @@ class FullDestination implements ArrayAccess
     
     /**
      * Gets location
-     * @return Systran\Client\FullLocation
+     * @return Systran\Client\Model\FullLocation
      */
     public function getLocation()
     {
@@ -217,7 +217,7 @@ class FullDestination implements ArrayAccess
   
     /**
      * Sets location
-     * @param Systran\Client\FullLocation $location Location
+     * @param Systran\Client\Model\FullLocation $location Location
      * @return $this
      */
     public function setLocation($location)

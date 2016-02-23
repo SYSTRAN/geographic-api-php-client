@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -51,8 +51,8 @@ class DestinationDetailsResponse implements ArrayAccess
       * @var string[]
       */
     static $SystranTypes = array(
-        'error' => 'Systran\Client\ErrorResponse',
-        'result' => 'Systran\Client\FullDestination'
+        'error' => 'Systran\Client\Model\ErrorResponse',
+        'result' => 'Systran\Client\Model\FullDestination'
     );
   
     /** 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Systran\Client
+ * @package  Systran\Client\Model
  *
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  *
@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -39,7 +39,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description Event with only basic information
- * @package     Systran\Client
+ * @package     Systran\Client\Model
  * @author      http://github.com/Systran-api/Systran-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/Systran-api/Systran-codegen
@@ -52,9 +52,9 @@ class LiteEvent implements ArrayAccess
       */
     static $SystranTypes = array(
         'id' => 'string',
-        'location' => 'Systran\Client\LiteLocation',
+        'location' => 'Systran\Client\Model\LiteLocation',
         'name' => 'string',
-        'opening_dates' => 'Systran\Client\OpeningDates',
+        'opening_dates' => 'Systran\Client\Model\OpeningDates',
         'main_type' => 'string',
         'types' => 'string[]',
         'rating' => 'int',
@@ -115,7 +115,7 @@ class LiteEvent implements ArrayAccess
     
     /**
       * $location Location
-      * @var Systran\Client\LiteLocation
+      * @var Systran\Client\Model\LiteLocation
       */
     protected $location;
     
@@ -127,7 +127,7 @@ class LiteEvent implements ArrayAccess
     
     /**
       * $opening_dates Opening dates
-      * @var Systran\Client\OpeningDates
+      * @var Systran\Client\Model\OpeningDates
       */
     protected $opening_dates;
     
@@ -197,7 +197,7 @@ class LiteEvent implements ArrayAccess
     
     /**
      * Gets location
-     * @return Systran\Client\LiteLocation
+     * @return Systran\Client\Model\LiteLocation
      */
     public function getLocation()
     {
@@ -206,7 +206,7 @@ class LiteEvent implements ArrayAccess
   
     /**
      * Sets location
-     * @param Systran\Client\LiteLocation $location Location
+     * @param Systran\Client\Model\LiteLocation $location Location
      * @return $this
      */
     public function setLocation($location)
@@ -239,7 +239,7 @@ class LiteEvent implements ArrayAccess
     
     /**
      * Gets opening_dates
-     * @return Systran\Client\OpeningDates
+     * @return Systran\Client\Model\OpeningDates
      */
     public function getOpeningDates()
     {
@@ -248,7 +248,7 @@ class LiteEvent implements ArrayAccess
   
     /**
      * Sets opening_dates
-     * @param Systran\Client\OpeningDates $opening_dates Opening dates
+     * @param Systran\Client\Model\OpeningDates $opening_dates Opening dates
      * @return $this
      */
     public function setOpeningDates($opening_dates)

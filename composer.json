@@ -13,7 +13,7 @@
     "authors": [
         {
             "name": "Systran and contributors",
-            "homepage": "https://github.com/Systran-api/Systran-codegen"
+            "homepage": "https://github.com/SYSTRAN/geographic-api-php-client"
         }
     ],
     "require": {

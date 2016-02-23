@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Systran\Client
+ * @package  Systran\Client\Model
  *
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  *
@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -39,7 +39,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description Location
- * @package     Systran\Client
+ * @package     Systran\Client\Model
  * @author      http://github.com/Systran-api/Systran-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/Systran-api/Systran-codegen
@@ -51,8 +51,8 @@ class FullPOILocation implements ArrayAccess
       * @var string[]
       */
     static $SystranTypes = array(
-        'position' => 'Systran\Client\FullPosition',
-        'address' => 'Systran\Client\POIAddress'
+        'position' => 'Systran\Client\Model\FullPosition',
+        'address' => 'Systran\Client\Model\POIAddress'
     );
   
     /** 
@@ -85,13 +85,13 @@ class FullPOILocation implements ArrayAccess
     
     /**
       * $position Position defined by coordinates and type
-      * @var Systran\Client\FullPosition
+      * @var Systran\Client\Model\FullPosition
       */
     protected $position;
     
     /**
       * $address Address
-      * @var Systran\Client\POIAddress
+      * @var Systran\Client\Model\POIAddress
       */
     protected $address;
     
@@ -110,7 +110,7 @@ class FullPOILocation implements ArrayAccess
     
     /**
      * Gets position
-     * @return Systran\Client\FullPosition
+     * @return Systran\Client\Model\FullPosition
      */
     public function getPosition()
     {
@@ -119,7 +119,7 @@ class FullPOILocation implements ArrayAccess
   
     /**
      * Sets position
-     * @param Systran\Client\FullPosition $position Position defined by coordinates and type
+     * @param Systran\Client\Model\FullPosition $position Position defined by coordinates and type
      * @return $this
      */
     public function setPosition($position)
@@ -131,7 +131,7 @@ class FullPOILocation implements ArrayAccess
     
     /**
      * Gets address
-     * @return Systran\Client\POIAddress
+     * @return Systran\Client\Model\POIAddress
      */
     public function getAddress()
     {
@@ -140,7 +140,7 @@ class FullPOILocation implements ArrayAccess
   
     /**
      * Sets address
-     * @param Systran\Client\POIAddress $address Address
+     * @param Systran\Client\Model\POIAddress $address Address
      * @return $this
      */
     public function setAddress($address)

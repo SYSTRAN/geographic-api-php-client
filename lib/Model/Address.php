@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -51,7 +51,7 @@ class Address implements ArrayAccess
       * @var string[]
       */
     static $SystranTypes = array(
-        'components' => 'Systran\Client\AddressComponents',
+        'components' => 'Systran\Client\Model\AddressComponents',
         'formatted' => 'string'
     );
   
@@ -85,7 +85,7 @@ class Address implements ArrayAccess
     
     /**
       * $components Address components
-      * @var Systran\Client\AddressComponents
+      * @var Systran\Client\Model\AddressComponents
       */
     protected $components;
     
@@ -110,7 +110,7 @@ class Address implements ArrayAccess
     
     /**
      * Gets components
-     * @return Systran\Client\AddressComponents
+     * @return Systran\Client\Model\AddressComponents
      */
     public function getComponents()
     {
@@ -119,7 +119,7 @@ class Address implements ArrayAccess
   
     /**
      * Sets components
-     * @param Systran\Client\AddressComponents $components Address components
+     * @param Systran\Client\Model\AddressComponents $components Address components
      * @return $this
      */
     public function setComponents($components)

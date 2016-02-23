@@ -31,7 +31,7 @@
  * Do not edit the class manually.
  */
 
-namespace Systran\Client;
+namespace Systran\Client\Model;
 
 use \ArrayAccess;
 /**
@@ -51,10 +51,10 @@ class EventsResponse implements ArrayAccess
       * @var string[]
       */
     static $SystranTypes = array(
-        'error' => 'Systran\Client\ErrorResponse',
+        'error' => 'Systran\Client\Model\ErrorResponse',
         'total' => 'int',
         'offset' => 'int',
-        'events' => 'Systran\Client\LiteEvent[]'
+        'events' => 'Systran\Client\Model\LiteEvent[]'
     );
   
     /** 
@@ -93,7 +93,7 @@ class EventsResponse implements ArrayAccess
     
     /**
       * $error Error at request level
-      * @var Systran\Client\ErrorResponse
+      * @var Systran\Client\Model\ErrorResponse
       */
     protected $error;
     
@@ -111,7 +111,7 @@ class EventsResponse implements ArrayAccess
     
     /**
       * $events Array of lite Events
-      * @var Systran\Client\LiteEvent[]
+      * @var Systran\Client\Model\LiteEvent[]
       */
     protected $events;
     
@@ -132,7 +132,7 @@ class EventsResponse implements ArrayAccess
     
     /**
      * Gets error
-     * @return Systran\Client\ErrorResponse
+     * @return Systran\Client\Model\ErrorResponse
      */
     public function getError()
     {
@@ -195,7 +195,7 @@ class EventsResponse implements ArrayAccess
     
     /**
      * Gets events
-     * @return Systran\Client\LiteEvent[]
+     * @return Systran\Client\Model\LiteEvent[]
      */
     public function getEvents()
     {
@@ -204,7 +204,7 @@ class EventsResponse implements ArrayAccess
   
     /**
      * Sets events
-     * @param Systran\Client\LiteEvent[] $events Array of lite Events
+     * @param Systran\Client\Model\LiteEvent[] $events Array of lite Events
      * @return $this
      */
     public function setEvents($events)
